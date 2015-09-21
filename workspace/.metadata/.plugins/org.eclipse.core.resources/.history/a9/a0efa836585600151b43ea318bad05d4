@@ -1,0 +1,17 @@
+package graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+	
+	Node startingNode;
+	ArrayList<Node> nodes = new ArrayList<Node>();
+	
+	
+	public void insertNode(int value){
+		Node node = new Node();
+		node.setValue(value);
+		
+	}
+
+}

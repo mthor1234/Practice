@@ -1,0 +1,13 @@
+package dijkstra;
+
+public class Main {
+	
+	Graph g = new Graph();
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

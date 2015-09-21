@@ -1,0 +1,17 @@
+package binaryheap_another;
+
+public class Node {
+	
+	Node leftChild;
+	Node rightChild;
+	int val;
+	
+	public Node(int val){
+		this.val = val;
+	}
+	
+	public void setNext(Node n){
+		this.next = n;
+	}
+
+}

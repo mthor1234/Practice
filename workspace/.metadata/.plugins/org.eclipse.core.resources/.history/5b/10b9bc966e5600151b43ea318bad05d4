@@ -1,0 +1,16 @@
+package polymorphism;
+
+/*
+ * This is an example of inheritance and polymorphism....
+ * All makes of vehicles will be cars and will inherit all of cars methods/fields.
+ */
+
+public class Car {
+	private String color;
+	private int num_Seats;
+	private boolean standard;
+	private String name;
+	private int year;
+	private String licensePlate;
+
+}

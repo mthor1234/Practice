@@ -1,0 +1,16 @@
+package linkedlist_another;
+
+public class Node {
+	
+	Node next;
+	int val;
+	
+	public Node(int val){
+		this.val = val;
+	}
+	
+	public void setNext(Node n){
+		this.next = n;
+	}
+
+}

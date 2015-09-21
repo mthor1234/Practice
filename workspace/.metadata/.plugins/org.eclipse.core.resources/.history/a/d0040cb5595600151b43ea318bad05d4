@@ -1,0 +1,38 @@
+package graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+	
+	Node startingNode;
+	ArrayList<Node> nodes = new ArrayList<Node>();
+	
+	
+	public void insertNode(){
+		Node node = new Node();
+		node.setValue(nodes.size());
+		nodes.add(node);
+		
+	}
+	
+	public void setNodeConnectedTo(Node node, ArrayList<Node> connectedNodes){
+		for(int i = 0; i < connectedNodes.size(); i ++){
+			node.setEdge(connectedNodes.get(i));
+			connectedNodes.get(i).setEdge(node);
+		}
+		
+	}
+	
+	public ArrayList<Node> findNodesBasedOnValues(ArrayList<Integer> values){
+		
+		for()
+			for(int i = 0; i < nodes.size(); i++){
+				if(nodes.get(i).getValue() = 
+			}
+		
+		
+		return nodes;
+	}
+	
+
+}

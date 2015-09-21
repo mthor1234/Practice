@@ -1,0 +1,10 @@
+package polymorphism;
+
+/*
+ * This is an example of inheritance and polymorphism....
+ * All makes of vehicles will be cars and will inherit all of cars methods/fields.
+ */
+
+public class Car {
+
+}

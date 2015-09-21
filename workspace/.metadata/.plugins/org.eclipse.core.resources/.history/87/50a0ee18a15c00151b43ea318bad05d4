@@ -1,0 +1,10 @@
+package binaryheap_another;
+
+public class Main {
+	
+	Heap heap = new Heap();
+	
+	public static void Main(String[] args){
+	}
+
+}

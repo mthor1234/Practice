@@ -1,0 +1,70 @@
+package linkedlist_another;
+
+import java.util.Scanner;
+
+public class Main {
+	LinkedList list;
+
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.println("Enter in value to push onto LinkedList");
+		
+		int top = reader.nextInt();
+		
+		list = new LinkedList(top);
+		
+	}
+	
+	
+	public static void handleStackLinkedInput(){
+	Scanner reader = new Scanner(System.in);
+	System.out.println("Welcome to the 'Stack Linked List Experience'...\n "
+			+ "Type 'push' to push a number onto the stack... \n"
+			+ "Type 'pop' to pop a number off of the stack... \n"
+			+ "Type 'find' to look at the top of the stack....\n"
+			+ "Type 'print' to print off the stack.... \n"
+			+ "Type 'q' to quit at anytime");
+	
+	String userChoice = reader.next();
+	
+	
+		while(!userChoice.equalsIgnoreCase("q")){
+			
+			if(userChoice.equalsIgnoreCase("push")){
+				System.out.println("Type a number to push onto the stack ");
+				Scanner read = new Scanner(System.in);
+				int pushNumber = reader.nextInt();
+
+				list.push(pushNumber);
+			}
+			
+			else if(userChoice.equalsIgnoreCase("pop")){
+				list.pop();
+			}
+			
+			else if(userChoice.equalsIgnoreCase("find")){
+				System.out.println("Type a number to find ");
+				Scanner read = new Scanner(System.in);
+				int num = reader.nextInt();
+				stackLinkedList.find(num);
+			}
+			
+			else if(userChoice.equalsIgnoreCase("print")){
+				stackLinkedList.print();
+			}
+			
+			else if(userChoice.equalsIgnoreCase("q")){
+				break;
+			}
+			
+			else{
+			System.out.println("Command not found, try again!");
+
+			}
+			
+			handleStackLinkedInput();
+		}
+	}
+
+}

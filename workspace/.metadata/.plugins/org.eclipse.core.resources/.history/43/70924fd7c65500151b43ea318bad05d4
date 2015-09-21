@@ -1,0 +1,30 @@
+package binarytree;
+
+public class BinaryTree {
+	
+	Node root;
+	
+	
+	public void insertNode(Node node, int value){
+		// If the value is less than the nodes value
+		if(value <= node.getValue()){
+			if(node.leftChild != null){
+				insertNode(node.leftChild, value);
+			}
+			else{
+				node.leftChild = new Node(value);
+			}
+			
+		}
+		else if(value > node.getValue()){
+			if(node.rightChild != null){
+				insertNode(node.rightChild, value);
+			}
+			else{
+				node.rightChild = new Node(value);
+			}
+		}
+		
+	}
+
+}

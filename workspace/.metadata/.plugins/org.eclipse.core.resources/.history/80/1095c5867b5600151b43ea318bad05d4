@@ -1,0 +1,27 @@
+package polymorphism;
+
+public class Corvette extends Car {
+	
+	private int i = 1;
+	
+	public Corvette(){
+		super("VRRRRRRRRRR....Purrrrrrrrrr", "Red", "Paddle Shifter");
+	}
+	
+
+	@Override
+	protected void startEngine() {
+		super.startEngine();
+	}
+	
+	public void upShift(){
+		System.out.println("Up-Shifting from " + 1 + "to " +  i + 1);
+		
+	}
+	
+	
+	
+	
+	
+
+}

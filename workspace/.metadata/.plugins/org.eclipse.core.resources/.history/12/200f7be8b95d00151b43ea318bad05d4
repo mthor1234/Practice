@@ -1,0 +1,89 @@
+package a_star;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Grid {
+	
+	Node[][] grid = new Node[6][6];
+	Node startNode, targetNode;
+	
+	ArrayList<Node> openList;
+	ArrayList<Node> closedList;
+
+	
+	public Grid(Node start, Node end){
+		startNode = start;
+		targetNode = end;
+		
+		openList = new ArrayList<Node>();
+		closedList = new ArrayList<Node>();
+
+	}
+	
+	
+	public void generateGrid(){
+		
+		Random rand = null;
+	    int start_i = rand.nextInt((6 - 0) + 1) + 0;
+	    int start_j = rand.nextInt((6 - 0) + 1) + 0;
+	    
+	    int target_i = rand.nextInt((6 - 0) + 1) + 0;
+	    int target_j = rand.nextInt((6 - 0) + 1) + 0;
+
+		
+		for(int i = 0; i < grid.length; i++){
+			for(int j = 0; j < grid.length; j++){	
+				
+				Node tempNode = new Node();
+				tempNode.row = i;
+				tempNode.col = j;
+				tempNode.setHValue( (Math.abs(target_i) - i) + (Math.abs(target_j) - j) );
+				grid[i][j] = tempNode;
+				
+			}		
+		}
+		
+		startNode = grid[start_i][start_j];
+		targetNode = grid[target_i][target_j];
+	}
+	
+	
+	public void a_Star(Node n){
+		closedList.add(n);
+		
+		calculateSurroundingNodes(n);
+	}
+	
+	public void calculateSurroundingNodes(Node n){
+		int row = n.row;
+		int col = n.col;
+		
+		for(int i = row - 1; i < row + 1; i++){
+			for(int j = col - 1; j < col + 1; j++){
+				
+				//  Do calculate updates values for nodes if the node is not in the closed list
+				if(!closedList.contains(grid[i][j])){
+				
+					// If vertical or horizontal, add 10 to the parent G value to get the G value for node
+					// Also calculate the f value
+					if( i == row || j == col){
+						grid[i][j].setgValue(n.getgValue() + 10);
+						grid[i][j].setfValue(grid[i][j].getgValue() + grid[i][j].gethValue());
+	
+					}
+					// Otherwise, add 14 to parent G value because it is a diagonal move
+					// Also calculate the f value
+					else{
+						grid[i][j].setgValue(n.getgValue() + 14);
+						grid[i][j].setfValue(grid[i][j].getgValue() + grid[i][j].gethValue());
+				}
+				
+				}
+			}
+		}
+		
+	}
+	
+	
+}

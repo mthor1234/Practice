@@ -1,0 +1,23 @@
+package a_star;
+
+public class Grid {
+	
+	Node[][] grid = new Node[6][6];
+	Node startNode, targetNode;
+	
+	public Grid(Node start, Node end){
+		startNode = start;
+		targetNode = end;
+	}
+	
+	
+	public void generateGrid(){
+		for(int i = 0; i < grid.length; i++){
+			for(int j = 0; j < grid.length; j++){
+				grid[i][j] = new Node();
+			}		
+		}
+	}
+	
+
+}

@@ -1,0 +1,76 @@
+package polymorphism;
+
+/*
+ * This is an example of inheritance and polymorphism....
+ * All makes of vehicles will be cars and will inherit all of cars methods/fields.
+ */
+
+public class Car {
+	protected String color;
+	private int num_Seats;
+	private boolean standard;
+	private String make;
+	private int year;
+	private String license_Plate;
+	private final String engineNoise;
+	
+	// Constructor
+	protected Car(String engineNoise){
+		this.engineNoise = engineNoise;
+	}
+
+	protected Car(String color, int num_Seats, boolean standard, String make,
+			int year, String license_Plate, String noise) {
+		this.color = color;
+		this.num_Seats = num_Seats;
+		this.standard = standard;
+		this.make = make;
+		this.year = year;
+		this.license_Plate = license_Plate;
+		engineNoise = noise;
+	}
+	
+	public void startEngine(){
+		System.out.println("Starts car engine: " + engineNoise);
+	}
+
+
+	protected String getColor() {
+		return color;
+	}
+	protected void setColor(String color) {
+		this.color = color;
+	}
+	protected int getNum_Seats() {
+		return num_Seats;
+	}
+	protected void setNum_Seats(int num_Seats) {
+		this.num_Seats = num_Seats;
+	}
+	protected boolean isStandard() {
+		return standard;
+	}
+	protected void setStandard(boolean standard) {
+		this.standard = standard;
+	}
+	protected String getName() {
+		return make;
+	}
+	protected void setName(String name) {
+		this.make = name;
+	}
+	protected int getYear() {
+		return year;
+	}
+	protected void setYear(int year) {
+		this.year = year;
+	}
+	protected String getLicense_Plate() {
+		return license_Plate;
+	}
+	protected void setLicense_Plate(String license_Plate) {
+		this.license_Plate = license_Plate;
+	}
+	
+
+}

@@ -1,0 +1,26 @@
+package dijkstra;
+
+public class Main {
+	
+	static Graph g = new Graph();
+
+	public static void main(String[] args) {
+		
+		Node nodeA = new Node("A");
+		Node nodeB = new Node("B");
+		Node nodeC = new Node("C");
+
+
+		nodeA.addEdge(3, nodeB);
+		nodeB.addEdge(3, nodeA);
+
+		nodeA.addEdge(5, nodeC);
+		nodeC.addEdge(5, nodeA);
+
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package polymorphism;
+
+public class Volkswagon extends Car{
+
+	protected Volkswagon(String engineNoise) {
+		super(engineNoise);
+		// TODO Auto-generated constructor stub
+	}
+
+}

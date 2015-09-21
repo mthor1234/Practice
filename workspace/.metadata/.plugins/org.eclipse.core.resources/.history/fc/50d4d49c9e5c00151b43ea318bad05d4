@@ -1,0 +1,17 @@
+package binaryheap_another;
+
+public class Node {
+	
+	int val;
+	boolean goLeft == true;
+	
+	Node leftChild;
+	Node rightChild;
+	
+	public Node(int val){
+		this.val = val;
+	}
+	
+
+
+}

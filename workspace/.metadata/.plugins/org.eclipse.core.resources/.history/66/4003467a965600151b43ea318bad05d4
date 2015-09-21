@@ -1,0 +1,14 @@
+package fibonacci;
+
+public class Fibonacci_Sequence {
+	
+	
+	public void sequence(int number){
+		if(number == 0){
+			System.out.print(number + ",");
+			sequence(1);
+		}
+		int previousNum = number;
+	}
+
+}

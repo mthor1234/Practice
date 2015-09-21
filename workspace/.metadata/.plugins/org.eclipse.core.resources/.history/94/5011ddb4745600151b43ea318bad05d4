@@ -1,0 +1,16 @@
+package polymorphism;
+
+public class Corvette extends Car {
+
+	public Corvette(){
+		super("VRRRRRRRRRR....Purrrrrrrrrr", "Red");
+	}
+	
+	public void shift(){
+		System.out.println("Shifting paddle gear");
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,25 @@
+package hashtable;
+
+public class HashTable {
+	
+	int[] data = new int[30];
+	
+	
+	
+	public HashTable(){
+		
+	}
+	
+	
+	public int hashFunction(int val){
+		
+		int hash = val % (data.length - 1);
+		
+		
+		return hash;
+		
+	}
+	
+	
+
+}

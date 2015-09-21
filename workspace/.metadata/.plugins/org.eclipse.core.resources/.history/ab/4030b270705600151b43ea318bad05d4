@@ -1,0 +1,13 @@
+package polymorphism;
+
+public class Corvette extends Car {
+
+	public Corvette(String color, int num_Seats, boolean standard, String make,
+			int year, String license_Plate){
+		super(color, num_Seats, standard, make, year, license_Plate)
+		
+	}
+	
+	
+
+}

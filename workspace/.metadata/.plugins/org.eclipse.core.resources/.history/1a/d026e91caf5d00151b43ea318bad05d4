@@ -1,0 +1,24 @@
+package a_star;
+
+public class Node {
+
+	Node northNode, northEastNode, eastNode, southEastNode, southNode, southWestNode, westNode, northWestNode;
+	private int gValue, fValue;	
+	
+	public Node(){
+	}
+	
+	public Node(int value){
+		this.setValue(value);
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	
+}

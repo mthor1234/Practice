@@ -1,0 +1,17 @@
+package graph;
+
+public class Graph {
+	
+	Node startingNode = new Node();
+	
+	public void setStartingNode(){
+		
+	}
+	
+	
+	public void insertNode(Node node){
+		
+		
+	}
+
+}

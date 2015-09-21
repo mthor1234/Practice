@@ -1,0 +1,10 @@
+package bfs_dfs;
+
+import java.util.ArrayList;
+
+public class Vertex {
+	
+	int id;
+	ArrayList<Vertex> neighbors = new ArrayList<Vertex>();
+
+}

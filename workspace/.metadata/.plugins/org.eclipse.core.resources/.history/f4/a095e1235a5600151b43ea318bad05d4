@@ -1,0 +1,29 @@
+package graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+	
+	Node startingNode;
+	ArrayList<Node> nodes = new ArrayList<Node>();
+	
+	
+	public void insertNode(){
+		Node node = new Node();
+		node.setValue(nodes.size());
+		nodes.add(node);
+		
+	}
+	
+	public void setNodeConnectedTo(Node node, ArrayList<Integer> values){
+		for(int i = 0; i < values.size(); i++){
+			if(node.getValue() != nodes.get(values.get(i)).getValue()){
+				node.setEdge(nodes.get(values.get(i)));
+				nodes.get(values.get(i)).setEdge(node);
+			}
+		}
+		
+	}
+	
+
+}

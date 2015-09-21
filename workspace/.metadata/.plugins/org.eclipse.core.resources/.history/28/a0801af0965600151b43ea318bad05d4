@@ -1,0 +1,21 @@
+package fibonacci;
+
+public class Fibonacci_Sequence {
+	
+	int previousNumber = 0;
+	
+	
+	public void sequence(int number){
+		
+		if(number == 0){
+			System.out.print(number + ",");
+			previousNumber = 0;
+			sequence(1);
+		}
+		else{
+			System.out.print(number + ",");
+			sequence()
+		}
+	}
+
+}

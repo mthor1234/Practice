@@ -1,0 +1,10 @@
+
+public class Stack {
+	
+	int top_pointer;
+	
+	// Initialize an integer array to be used as the stack.. Currently has 20 spots
+	int[] stack = new int[20];
+
+
+}

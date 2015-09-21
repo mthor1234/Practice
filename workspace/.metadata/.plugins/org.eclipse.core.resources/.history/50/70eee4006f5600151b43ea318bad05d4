@@ -1,0 +1,71 @@
+package polymorphism;
+
+/*
+ * This is an example of inheritance and polymorphism....
+ * All makes of vehicles will be cars and will inherit all of cars methods/fields.
+ */
+
+public class Car {
+	private String color;
+	private int num_Seats;
+	private boolean standard;
+	private String make;
+	private int year;
+	private String license_Plate;
+	
+	// Constructor
+	public Car(){
+		
+	}
+
+	public Car(String color, int num_Seats, boolean standard, String make,
+			int year, String license_Plate) {
+		super();
+		this.color = color;
+		this.num_Seats = num_Seats;
+		this.standard = standard;
+		this.make = make;
+		this.year = year;
+		this.license_Plate = license_Plate;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getNum_Seats() {
+		return num_Seats;
+	}
+	public void setNum_Seats(int num_Seats) {
+		this.num_Seats = num_Seats;
+	}
+	public boolean isStandard() {
+		return standard;
+	}
+	public void setStandard(boolean standard) {
+		this.standard = standard;
+	}
+	public String getName() {
+		return make;
+	}
+	public void setName(String name) {
+		this.make = name;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public String getLicense_Plate() {
+		return license_Plate;
+	}
+	public void setLicense_Plate(String license_Plate) {
+		this.license_Plate = license_Plate;
+	}
+	
+
+}

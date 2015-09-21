@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+// This Class is used to launch different data structure examples
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter '1' to start stack");
+	}
+
+}

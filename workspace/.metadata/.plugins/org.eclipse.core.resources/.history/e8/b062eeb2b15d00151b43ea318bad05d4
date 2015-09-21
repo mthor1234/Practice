@@ -1,0 +1,34 @@
+package a_star;
+
+import java.util.Random;
+
+public class Grid {
+	
+	Node[][] grid = new Node[6][6];
+	Node startNode, targetNode;
+	
+	public Grid(Node start, Node end){
+		startNode = start;
+		targetNode = end;
+	}
+	
+	
+	public void generateGrid(){
+		
+		Random rand = null;
+	    int start_i = rand.nextInt((6 - 0) + 1) + 0;
+	    int start_j = rand.nextInt((6 - 0) + 1) + 0;
+	    
+	    int target_i = rand.nextInt((6 - 0) + 1) + 0;
+	    int target_j = rand.nextInt((6 - 0) + 1) + 0;
+
+		
+		for(int i = 0; i < grid.length; i++){
+			for(int j = 0; j < grid.length; j++){				
+				grid[i][j] = new Node();
+			}		
+		}
+	}
+	
+
+}

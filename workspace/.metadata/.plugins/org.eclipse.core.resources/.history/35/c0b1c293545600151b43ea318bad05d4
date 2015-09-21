@@ -1,0 +1,30 @@
+package graph;
+
+import java.util.ArrayList;
+
+public class Node {
+
+	private int value;		
+	private ArrayList<Edge> edges = new ArrayList<Edge>();
+	
+	public Node(){
+	}
+	
+	public Node(int value){
+		this.setValue(value);
+	}
+	
+	public void setEdge(Node nodeB){
+		Edge edge = new Edge(this, nodeB);
+		edges.add(edge)
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}	
+	
+}

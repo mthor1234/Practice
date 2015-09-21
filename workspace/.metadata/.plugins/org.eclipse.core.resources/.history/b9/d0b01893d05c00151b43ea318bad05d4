@@ -1,0 +1,34 @@
+package hashtable;
+
+public class HashTable {
+	
+	int[] data = new int[30];
+	
+	
+	
+	public HashTable(){
+		
+		
+	}
+	
+	
+	public int hashFunction(int val){
+		
+		int hash = val % (data.length - 1);
+		
+		
+		return hash;
+		
+	}
+	
+	public void printHashTable(){
+		int i = 0;
+		for(int numbers: data){
+			
+			System.out.println("Index: " + i + " Number: " + numbers);
+		}
+	}
+	
+	
+
+}

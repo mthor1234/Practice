@@ -1,0 +1,14 @@
+package polymorphism;
+
+public class Corvette extends Car {
+
+	
+	private String engineNoise = "Pop!";
+	
+	public Corvette(){
+		super("VRRRRRRRRRR....Purrrrrrrrrr");
+	}
+	
+	
+
+}

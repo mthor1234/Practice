@@ -1,0 +1,43 @@
+package binaryheap;
+
+public class Node {
+
+	Node leftChild;
+	Node rightChild;
+	private int value;	
+	
+	public Node(){
+	}
+	
+	public Node(int value){
+		this.setValue(value);
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	public boolean checkForChildOpenings(){
+		boolean childSpotsFilled;
+		
+		if(leftChild == null){
+			childSpotsFilled = false;
+		}
+		else if(rightChild == null){
+			childSpotsFilled = false;
+		}
+		else if(leftChild != null && rightChild != null){
+			childSpotsFilled = true;
+		}
+		
+		return childSpotsFilled;
+		
+	}
+	
+	
+	
+}

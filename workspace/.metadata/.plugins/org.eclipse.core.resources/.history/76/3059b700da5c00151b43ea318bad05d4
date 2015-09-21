@@ -1,0 +1,40 @@
+package hashtable;
+
+import java.awt.List;
+
+public class HashTable {
+	
+	int[] data = new int[30];
+	
+	int[] numset = {18, 34, 41, 5, 7, 1, 5, 27, 15, 23, 12, 42, 15, 6, 7, 11,
+			24, 15, 8, 15, 36, 12, 21, 25, 26, 3};
+	
+	
+	public HashTable(){
+		for(int number: numset){
+			data[hashFunction(number)] = number;
+		}
+		
+	}
+	
+	
+	public int hashFunction(int val){
+		
+		int hash = val % (data.length - 1);
+		
+		
+		return hash;
+		
+	}
+	
+	public void printHashTable(){
+		int i = 0;
+		for(int numbers: data){
+			
+			System.out.println("Index: " + i + " Number: " + numbers);
+		}
+	}
+	
+	
+
+}

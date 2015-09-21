@@ -1,0 +1,7 @@
+package bfs_dfs;
+
+public class Vertex {
+	
+	ArrayList<Vertex> neighbors = new ArrayList<Vertext>();
+
+}

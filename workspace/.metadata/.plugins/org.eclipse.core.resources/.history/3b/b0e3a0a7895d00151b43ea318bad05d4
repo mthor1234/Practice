@@ -1,0 +1,24 @@
+package dijkstra;
+
+import java.util.ArrayList;
+
+public class Dijkstra {
+	ArrayList<Node> unVisited = new ArrayList<Node>();
+	ArrayList<Node> visited = new ArrayList<Node>();
+	Node currNode, goalNode;
+	Graph graph;
+	
+	
+	public Dijkstra(Node start, Node goal, Graph g){
+		currNode = start;
+		goalNode = goal;
+		graph = g;
+		
+		for(Node n: g.nodes){
+			n.distance = 99999999;	// Set the distance of each node initially to infinity
+			unVisited.add(n);
+		}
+	}
+
+
+}

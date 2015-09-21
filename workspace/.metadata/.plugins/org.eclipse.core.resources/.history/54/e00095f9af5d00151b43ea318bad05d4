@@ -1,0 +1,20 @@
+package a_star;
+
+public class Grid {
+	
+	Node[][] grid = new Node[6][6];
+	
+	
+	public void generateGrid(){
+		for(int i = 0; i < grid.length; i++){
+			
+			for(int j = 0; j < grid.length; j++){
+				
+			}
+			
+			
+		}
+	}
+	
+
+}

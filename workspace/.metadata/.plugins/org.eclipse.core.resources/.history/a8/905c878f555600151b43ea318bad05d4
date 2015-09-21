@@ -1,0 +1,24 @@
+package graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+	
+	Node startingNode;
+	ArrayList<Node> nodes = new ArrayList<Node>();
+	
+	public void setStartingNode(){
+		startingNode = new Node();
+		
+		
+		
+		
+	}
+	
+	
+	public void insertNode(Node node){
+		
+		
+	}
+
+}

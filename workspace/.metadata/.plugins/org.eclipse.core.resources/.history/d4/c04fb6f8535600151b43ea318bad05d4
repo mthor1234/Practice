@@ -1,0 +1,11 @@
+package graph;
+
+public class Edge {
+	// Represent the two nodes connected by this edge....
+	// O--Edge--O
+	Node nodeA;
+	Node nodB;
+	
+	private int weight;
+
+}

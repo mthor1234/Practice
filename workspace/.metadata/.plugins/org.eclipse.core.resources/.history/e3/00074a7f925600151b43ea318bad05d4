@@ -1,0 +1,28 @@
+package polymorphism;
+
+import java.util.ArrayList;
+
+public class InheritanceTest {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Car> cars = new ArrayList<Car>();
+		Car corvette = new Corvette();
+		Car volkswagon = new Volkswagon();
+
+		
+		
+		cars.add(volkswagon);
+		
+		
+		
+
+		corvette.startEngine();
+		volkswagon.startEngine();
+		
+		corvette.shift();
+		volkswagon.shift();
+		
+	}
+
+}

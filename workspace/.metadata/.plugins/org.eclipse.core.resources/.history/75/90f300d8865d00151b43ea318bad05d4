@@ -1,0 +1,15 @@
+package dijkstra;
+
+import java.util.ArrayList;
+
+public class Node {
+	
+	String id;
+	int distance;
+	ArrayList<Edge> edges;
+	
+	public Node(String id){
+		this.id = id;
+	}
+
+}

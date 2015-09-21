@@ -1,0 +1,29 @@
+
+public class Stack {
+	
+	// Holds the top of the stack
+	int top_pointer = 0;
+	
+	// Initialize an integer array to be used as the stack.. Currently has 20 spots
+	int[] stack = new int[20];
+	
+	
+	
+	public void push(int number){
+		if(top_pointer <= 20){
+		stack[top_pointer] = number;
+		}
+	}
+	
+	public void pop(){
+		if(top_pointer > 0){
+		top_pointer--;
+		}
+	}
+	
+	public void peek(){
+		System.out.println("Top of the stack is: " + stack[top_pointer]);
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package polymorphism;
+
+public class Volkswagon extends Car{
+
+	public Volkswagon() {
+		super(engineNoise);
+	}
+
+}

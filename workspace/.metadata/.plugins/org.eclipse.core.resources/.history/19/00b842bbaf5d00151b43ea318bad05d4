@@ -1,0 +1,13 @@
+package a_star;
+
+public class Grid {
+	
+	Node[][] grid = new Node[6][6];
+	
+	
+	public void generateGrid(){
+		
+	}
+	
+
+}

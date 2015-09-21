@@ -1,0 +1,42 @@
+package a_star;
+
+public class Node {
+
+	Node northNode, northEastNode, eastNode, southEastNode, southNode, southWestNode, westNode, northWestNode;
+	private int value;	
+	
+	public Node(){
+	}
+	
+	public Node(int value){
+		this.setValue(value);
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	public boolean checkForChildOpenings(){
+		boolean childSpotsFilled = false;
+		
+		if(leftChild == null){
+			childSpotsFilled = false;
+		}
+		else if(rightChild == null){
+			childSpotsFilled = false;
+		}
+		else if(leftChild != null && rightChild != null){
+			childSpotsFilled = true;
+		}
+		
+		return childSpotsFilled;
+		
+	}
+	
+	
+	
+}

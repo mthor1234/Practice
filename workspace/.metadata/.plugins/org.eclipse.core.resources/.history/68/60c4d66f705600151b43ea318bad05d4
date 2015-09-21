@@ -1,0 +1,77 @@
+package polymorphism;
+
+public class Corvette extends Car {
+
+	@Override
+	protected String getColor() {
+		return super.getColor();
+	}
+
+	@Override
+	protected void setColor(String color) {
+		super.setColor(color);
+	}
+
+	@Override
+	protected int getNum_Seats() {
+		// TODO Auto-generated method stub
+		return super.getNum_Seats();
+	}
+
+	@Override
+	protected void setNum_Seats(int num_Seats) {
+		// TODO Auto-generated method stub
+		super.setNum_Seats(num_Seats);
+	}
+
+	@Override
+	protected boolean isStandard() {
+		// TODO Auto-generated method stub
+		return super.isStandard();
+	}
+
+	@Override
+	protected void setStandard(boolean standard) {
+		// TODO Auto-generated method stub
+		super.setStandard(standard);
+	}
+
+	@Override
+	protected String getName() {
+		// TODO Auto-generated method stub
+		return super.getName();
+	}
+
+	@Override
+	protected void setName(String name) {
+		// TODO Auto-generated method stub
+		super.setName(name);
+	}
+
+	@Override
+	protected int getYear() {
+		// TODO Auto-generated method stub
+		return super.getYear();
+	}
+
+	@Override
+	protected void setYear(int year) {
+		// TODO Auto-generated method stub
+		super.setYear(year);
+	}
+
+	@Override
+	protected String getLicense_Plate() {
+		// TODO Auto-generated method stub
+		return super.getLicense_Plate();
+	}
+
+	@Override
+	protected void setLicense_Plate(String license_Plate) {
+		// TODO Auto-generated method stub
+		super.setLicense_Plate(license_Plate);
+	}
+	
+	
+
+}

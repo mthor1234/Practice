@@ -1,0 +1,21 @@
+package polymorphism;
+
+public class Corvette extends Car {
+
+	
+	public Corvette(){
+		super("VRRRRRRRRRR....Purrrrrrrrrr", "Red", "Paddle Shifter");
+	}
+	
+
+	@Override
+	protected void startEngine() {
+		super.startEngine();
+	}
+	
+	
+	
+	
+	
+
+}
